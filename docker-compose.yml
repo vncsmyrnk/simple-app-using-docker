@@ -2,6 +2,8 @@ version: '2.0'
 services:
   web:
     build: .
-    image: app-using-docker:0.1
+    image: simple-app-using-docker:0.1
+    volumes:
+    - ./src:/usr/share/nginx/html
     ports:
-    - "80:80"
+    - "8080:80"

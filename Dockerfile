@@ -1,1 +1,3 @@
-FROM alpine:3.7
+FROM nginx
+
+COPY src /usr/share/nginx/html
